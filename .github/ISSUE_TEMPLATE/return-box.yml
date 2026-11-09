@@ -1,0 +1,27 @@
+name: 巣立つ・外す / Move out or remove
+description: 私書箱を返します。転送札を残すか、名札を外すかを選べます。
+title: "[巣立ち] "
+labels: ["巣立ち"]
+body:
+  - type: input
+    id: box
+    attributes:
+      label: 私書箱の番号 / Box number
+      placeholder: "001"
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: どうしますか？ / What would you like?
+      options:
+        - 転送札を残す（転送先あり）/ Leave a forwarding tag with my new address
+        - 転送札を残す（転送先なし）/ Leave a forwarding tag without an address
+        - 名札を外す / Remove my tag
+    validations:
+      required: true
+  - type: input
+    id: new_url
+    attributes:
+      label: 転送先（新しい巣の住所）/ New address
+      placeholder: https://.../
