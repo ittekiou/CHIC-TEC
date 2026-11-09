@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: DyXis はじめての方へ
+    url: https://ittekiou.github.io/dyxis/guide.html
+    about: DyXis のしくみと、自分の巣の置き方
