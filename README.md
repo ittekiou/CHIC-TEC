@@ -37,8 +37,8 @@ DyXis の私書箱（P.O. Box）。
 
 ## 申し込み
 
-- 私書箱を借りる：[Issues で申し込む](../../issues/new?template=rent-box.yml)
-- 巣立つ・外す：[Issues で知らせる](../../issues/new?template=return-box.yml)
+- 私書箱を借りる：[Issues で申し込む](https://github.com/ittekiou/CHIC-TEC/issues/new?template=rent-box.yml)
+- 巣立つ・外す：[Issues で知らせる](https://github.com/ittekiou/CHIC-TEC/issues/new?template=return-box.yml)
 
 ---
 
