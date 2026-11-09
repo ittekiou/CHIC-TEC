@@ -1,0 +1,15 @@
+{
+  "sll": "0.1",
+  "name": "🈳 私書箱 002",
+  "url": "https://ittekiou.github.io/CHIC-TEC/box/002/",
+  "about": "空いています。借りたい方は CHIC TEC の Issues へ。",
+  "lang": "ja",
+  "updated": "2026-11-10",
+  "feeds": [],
+  "links": [
+    { "title": "借りる", "url": "https://github.com/ittekiou/CHIC-TEC/issues/new?template=rent-box.yml" }
+  ],
+  "nests": [
+    { "name": "CHIC TEC｜繭topia", "url": "https://ittekiou.github.io/CHIC-TEC/" }
+  ]
+}

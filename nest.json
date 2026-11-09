@@ -1,0 +1,21 @@
+{
+  "sll": "0.1",
+  "name": "CHIC TEC｜繭topia",
+  "url": "https://ittekiou.github.io/CHIC-TEC/",
+  "about": "DyXis の私書箱（P.O. Box）。本拠地はそのまま、仮の番地を期間限定で。",
+  "lang": "ja",
+  "updated": "2026-11-10",
+  "feeds": [
+    { "title": "CHIC TEC の書き込み", "url": "https://github.com/ittekiou/CHIC-TEC/commits/main.atom" }
+  ],
+  "links": [
+    { "title": "README（会則）", "url": "https://github.com/ittekiou/CHIC-TEC" }
+  ],
+  "nests": [
+    { "name": "私書箱 001", "url": "https://ittekiou.github.io/CHIC-TEC/box/001/" },
+    { "name": "私書箱 002", "url": "https://ittekiou.github.io/CHIC-TEC/box/002/" },
+    { "name": "私書箱 003", "url": "https://ittekiou.github.io/CHIC-TEC/box/003/" },
+    { "name": "CESE PEC｜排泄猛者倶楽部", "url": "https://ittekiou.github.io/CESE-PEC/" },
+    { "name": "DyXis", "url": "https://ittekiou.github.io/dyxis/" }
+  ]
+}
