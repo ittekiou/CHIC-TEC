@@ -1,20 +1,20 @@
 name: 私書箱を借りる / Rent a P.O. Box
-description: CHIC TEC の私書箱に、あなたの名札を一枚置きます。
+description: CHIC TEC の私書箱に、あなたの札（貼札）を一枚貼ります。
 title: "[借りる] "
 labels: ["借りる"]
 body:
   - type: markdown
     attributes:
       value: |
-        私書箱に置くのは名札一枚だけです（名前・自己紹介・リンク・RSS）。本文は、あなた自身の場所に。
+        私書箱に貼るのは札一枚だけです（名前・自己紹介・本拠地へのリンク・RSS）。本文は、あなた自身の場所に。
         書いた内容は公開されます。
-        すでに自分の巣（nest.json）がある方は、私書箱は要りません。[別荘 DyXis に直接載せてもらえます](https://github.com/ittekiou/dyxis/issues/new?template=add-nest.yml)。
-        私書箱を借りたあとで自分の巣を置いたら、「巣立つ・外す」で知らせてください。
+        すでに自分の巣（立札 nest.json を立てた場所）がある方は、私書箱は要りません。[別荘 DyXis に直接載せてもらえます](https://github.com/ittekiou/dyxis/issues/new?template=add-nest.yml)。
+        私書箱を借りたあとで自分の巣に立札を立てたら、「巣立つ・外す」で知らせてください。
         期間限定（6か月）。
   - type: input
     id: nest_name
     attributes:
-      label: 名札の名前 / Name
+      label: 札に書く名前 / Name
     validations:
       required: true
   - type: input
@@ -38,7 +38,7 @@ body:
   - type: dropdown
     id: forward
     attributes:
-      label: 巣立つとき、転送先を名札に書きますか？ / Show your new address when you move?
+      label: 巣立つとき、転送札に転送先を書きますか？ / Show your new address on the forwarding notice?
       options:
         - はい / Yes
         - いいえ / No
@@ -50,5 +50,5 @@ body:
     attributes:
       label: 確認 / Confirm
       options:
-        - label: 会則（期間限定・名札一枚・履歴は残る）を読みました / I have read the rules
+        - label: 会則（期間限定・札一枚・履歴は残る）を読みました / I have read the rules
           required: true

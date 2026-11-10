@@ -1,5 +1,5 @@
 name: 巣立つ・外す / Move out or remove
-description: 私書箱を返します。転送札を残すか、名札を外すかを選べます。
+description: 私書箱を返します。転送札を残すか、札を外すかを選べます。
 title: "[巣立つ] "
 labels: ["巣立つ"]
 body:
@@ -15,9 +15,9 @@ body:
     attributes:
       label: どうしますか？ / What would you like?
       options:
-        - 転送札を残す（転送先あり）/ Leave a forwarding tag with my new address
-        - 転送札を残す（転送先なし）/ Leave a forwarding tag without an address
-        - 名札を外す / Remove my tag
+        - 転送札を残す（転送先あり）/ Leave a forwarding notice with my new address
+        - 転送札を残す（転送先なし）/ Leave a forwarding notice without an address
+        - 札を外す / Remove my notice
     validations:
       required: true
   - type: input
