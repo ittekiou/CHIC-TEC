@@ -9,7 +9,7 @@
     { "title": "CHIC TEC の書き込み", "url": "https://github.com/ittekiou/CHIC-TEC/commits/main.atom" }
   ],
   "links": [
-    { "title": "README（会則）", "url": "https://github.com/ittekiou/CHIC-TEC" }
+    { "title": "私書箱を借りる", "url": "https://github.com/ittekiou/CHIC-TEC/issues/new?template=rent-box.yml" }
   ],
   "nests": [
     { "name": "私書箱 001", "url": "https://ittekiou.github.io/CHIC-TEC/box/001/" },
