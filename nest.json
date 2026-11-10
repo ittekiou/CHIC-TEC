@@ -2,9 +2,9 @@
   "sll": "0.1",
   "name": "CHIC TEC｜繭topia",
   "url": "https://ittekiou.github.io/CHIC-TEC/",
-  "about": "DyXis の私書箱（P.O. Box）。本拠地はそのまま、仮の番地を期間限定で。",
+  "about": "DyXis の私書箱（P.O. Box）。本拠地はそのまま、仮の住所を期間限定で。",
   "lang": "ja",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "feeds": [
     { "title": "CHIC TEC の書き込み", "url": "https://github.com/ittekiou/CHIC-TEC/commits/main.atom" }
   ],
