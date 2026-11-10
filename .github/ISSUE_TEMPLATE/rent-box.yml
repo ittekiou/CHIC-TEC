@@ -8,7 +8,7 @@ body:
       value: |
         私書箱に置くのは名札一枚だけです（名前・自己紹介・リンク・RSS）。本文は、あなた自身の場所に。
         書いた内容は公開されます。
-        すでに自分の巣（nest.json）がある方は、私書箱は要りません。DyXis に直接載せてもらえます。
+        すでに自分の巣（nest.json）がある方は、私書箱は要りません。[別荘 DyXis に直接載せてもらえます](https://github.com/ittekiou/dyxis/issues/new?template=add-nest.yml)。
         私書箱を借りたあとで自分の巣を置いたら、「巣立つ・外す」で知らせてください。
         期間限定（6か月）。
   - type: input
