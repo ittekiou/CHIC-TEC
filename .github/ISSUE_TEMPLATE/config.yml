@@ -3,3 +3,6 @@ contact_links:
   - name: DyXis はじめての方へ
     url: https://ittekiou.github.io/dyxis/guide.html
     about: DyXis のしくみと、自分の巣の置き方
+  - name: How DyXis Works (English)
+    url: https://ittekiou.github.io/dyxis/guide-en.html
+    about: How DyXis works, and how to make your own nest

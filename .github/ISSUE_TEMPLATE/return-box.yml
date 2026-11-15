@@ -1,7 +1,7 @@
 name: 巣立つ・外す / Move out or remove
-description: 私書箱を返します。転送札を残すか、札を外すかを選べます。
+description: 私書箱を返します。転送札を残すか、札を外すかを選べます。 / Return your P.O. Box. Leave a forwarding notice or remove your notice.
 title: "[巣立つ] "
-labels: ["巣立つ"]
+labels: ["巣立つ / Leave the nest"]
 body:
   - type: input
     id: box
