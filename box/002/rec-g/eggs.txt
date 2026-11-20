@@ -1,12 +1,11 @@
 # この私書箱の卵の一覧。ふだん見ているページのURLを、一行に一つ書く
 # ・RSSのURLを知らなくてよい（note・Substack・Bluesky・Medium・はてな・YouTube などは自動で探す）
 # ・「URL ｜ 表示名」と書くと、その名前で並ぶ
-# ・title: の行は庭の名前。好きに変えてよい
+# ・札（../nest.json）に書いた本拠地や RSS は、ここに書かなくても自動で卵になる
+# ・庭の名前は札の名前から自動でつく。変えたいときだけ「title: 名前」の行を書く
 
-title: 私書箱の集卵所
-
-# ── ここから下に、あなたの卵を書いてください
+# ── ここから下に、足したい卵を書く（Issue「卵を足す」からも書き足される）
 
 
 # ── 管理人からの便り（いらなければ消してよい）
-https://bsky.app/profile/dyxis.substack.com ｜ 🪺 DyXis からの便り
+https://bsky.app/profile/dyxis.substack.com ｜ 🪺 DyXis の便り
