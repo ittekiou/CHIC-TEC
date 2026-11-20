@@ -1,7 +1,7 @@
 {
   "title": "わたしの集卵処",
   "url": "",
-  "updated": "2026-11-20T12:45:37+09:00",
+  "updated": "2026-11-20T12:52:55+09:00",
   "shelves": [
     {
       "id": "write",
@@ -11,6 +11,11 @@
     {
       "id": "talk",
       "name": "💬 つぶやく",
+      "note": ""
+    },
+    {
+      "id": "info",
+      "name": "📮 管理人からの便り",
       "note": ""
     }
   ],
@@ -73,6 +78,36 @@
         }
       ],
       "latest_at": "2026-11-19T23:36:00+09:00",
+      "ok": true
+    },
+    {
+      "page": "https://bsky.app/profile/dyxis.substack.com",
+      "shelf": "info",
+      "order": 1,
+      "feed": "https://bsky.app/profile/dyxis.substack.com/rss",
+      "title": "🪺 DyXis の便り",
+      "link": "https://bsky.app/profile/dyxis.substack.com",
+      "latest": [
+        {
+          "title": "Solo Play to Rhizomatic Connections I d…",
+          "url": "https://bsky.app/profile/dyxis.substack.com/post/3n2hyxrp54s2b",
+          "image": "",
+          "date": "2026-11-17T11:34:00+09:00"
+        },
+        {
+          "title": "New Commons: DiGRhiC — Digital Gardener…",
+          "url": "https://bsky.app/profile/dyxis.substack.com/post/3n2dxmmicck2p",
+          "image": "",
+          "date": "2026-11-15T20:59:00+09:00"
+        },
+        {
+          "title": "DiGRhiC｜Digital Gardeners' Rootwork Fro…",
+          "url": "https://bsky.app/profile/dyxis.substack.com/post/3n2czxaqms22p",
+          "image": "",
+          "date": "2026-11-15T12:08:00+09:00"
+        }
+      ],
+      "latest_at": "2026-11-17T11:34:00+09:00",
       "ok": true
     }
   ]
