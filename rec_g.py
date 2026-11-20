@@ -99,11 +99,25 @@ def read_shelves(path):
 # ---------- 札（nest.json）から卵を拾う ----------
 
 def eggs_from_nest(folder):
-    """庭のひとつ上に札（nest.json）があれば、そこから卵を拾う（CHIC TEC の私書箱など）。
+    """札（nest.json）から卵を拾う。CHIC TEC の私書箱（box/NNN/rec-g/）なら部屋の札を自動で読む。
+    それ以外の庭は、eggs.txt に「nest: ../nest.json」のように書いたときだけ読む。
     RSS（feeds）があればそれを、なければ本拠地のリンク（links）を卵にする。
     GitHub の申し込みページなど、卵にならないリンクは飛ばす。"""
-    path = os.path.join(os.path.dirname(os.path.abspath(folder)), "nest.json")
-    if not os.path.exists(path):
+    here = os.path.abspath(folder)
+    room = os.path.dirname(here)
+    is_box = re.fullmatch(r"\d{3}", os.path.basename(room) or "") and os.path.basename(os.path.dirname(room)) == "box"
+    path = None
+    if is_box:                                            # CHIC TEC の私書箱（box/001/rec-g/ など）は自動で
+        path = os.path.join(room, "nest.json")
+    else:                                                 # ほかの庭は eggs.txt に「nest: 札の場所」と書いたときだけ
+        try:
+            with open(os.path.join(here, "eggs.txt"), encoding="utf-8") as f:
+                m = re.search(r"^nest\s*[:：]\s*(\S+)", f.read(), re.M)
+            if m:
+                path = os.path.normpath(os.path.join(here, m.group(1)))
+        except OSError:
+            pass
+    if not path or not os.path.exists(path):
         return "", []
     try:
         with open(path, encoding="utf-8") as f:
