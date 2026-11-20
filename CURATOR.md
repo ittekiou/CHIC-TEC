@@ -12,7 +12,7 @@
      `{ "title": "🥚 集卵処", "url": "https://ittekiou.github.io/CHIC-TEC/box/00N/rec-g/" }`
    - `feeds`：RSS（わかれば）
    - 期限の日付（札を貼った日＋6か月）を `about` か申し込みの Issue に書く
-3. 申し込みの Issue に「貼りました」と返事して閉じる
+3. 申し込みの Issue に「貼りました」と返事して閉じる（フォームの人には、集卵処の URL を添えてメールで知らせる）
 4. Google フォームで来た申し込みは、先に Issue に写してから 1 へ（Issue には公開してよい三点だけを写す。連絡先は写さない）
 
 札を書き換えると、集卵処は自動でできる（本拠地と RSS が最初の卵になる）。
@@ -28,6 +28,7 @@
 
 - 原則は GitHub の Issue。連絡も、その Issue へのコメント（`@ユーザー名`）で行う
 - GitHub のアカウントがない人は、Google フォームに一本化（note・X などで声をかけられたら、フォームを案内する）
+  https://docs.google.com/forms/d/e/1FAIpQLSfoP_hUXBxoMfVgzwmedjvllj08sCHSzyJ-d7VhtMTfNeJeDA/viewform
 - フォームの名簿（スプレッドシート）は Curator だけが見る。共有しない
 - 巣立った人の連絡先は、巣立ちの手続きが済んだら名簿から消す
 

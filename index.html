@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CHIC TEC｜繭topia ── 私書箱と集卵処</title>
+<meta name="description" content="本拠地はそのまま。仮の住所と、卵を集める庭を、半年だけお貸しします。DyXis の私書箱（P.O. Box）。">
+<style>
+  :root { --bg:#f3eee6; --card:#fbf8f3; --ink:#2b2622; --sub:#7a7068; --line:#ddd3c6; --accent:#3f7d4e; --blue:#2f6db5; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); line-height:1.75;
+         font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 20px 64px; }
+  .hero { text-align:center; margin-bottom:36px; }
+  .hero .mark { font-size:2.6rem; letter-spacing:.2em; }
+  h1 { font-size:1.8rem; margin:6px 0 2px; }
+  .sub { color:var(--sub); font-size:.85rem; margin:0; }
+  .lead { font-size:1.15rem; margin:22px 0 4px; }
+  .en { color:var(--sub); font-size:.85rem; font-style:italic; margin:0; }
+  h2 { font-size:1.15rem; margin:44px 0 14px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  .steps { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:14px; }
+  .step { background:var(--card); border-radius:12px; padding:18px 16px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  .step .ico { font-size:1.8rem; }
+  .step h3 { margin:4px 0 6px; font-size:1rem; }
+  .step p { margin:0; color:var(--sub); font-size:.9rem; }
+  .btns { display:flex; flex-wrap:wrap; gap:12px; }
+  .btn { display:inline-block; padding:12px 20px; border-radius:999px; text-decoration:none; font-weight:600;
+         border:1px solid var(--ink); color:var(--ink); background:transparent; }
+  .btn.main { background:var(--ink); color:var(--bg); }
+  .btn:hover { opacity:.85; }
+  .apply { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:14px; }
+  .apply .card { background:var(--card); border-radius:12px; padding:18px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  .apply h3 { margin:0 0 6px; font-size:1rem; }
+  .apply p { margin:0 0 14px; color:var(--sub); font-size:.9rem; }
+  ul.plain { padding-left:1.2em; margin:0; }
+  ul.plain li { margin:4px 0; }
+  .note { color:var(--sub); font-size:.85rem; }
+  a { color:var(--blue); }
+  footer { margin-top:56px; text-align:center; color:var(--sub); font-size:.8rem; }
+  footer a { color:var(--sub); }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="mark">🥚🐣🐜</div>
+    <h1>CHIC TEC｜繭topia</h1>
+    <p class="sub">Chick Hatch Incubation Cocoon｜Transient Ephemeral Colony</p>
+    <p class="lead">本拠地はそのまま。<br>仮の住所と、卵を集める庭を、半年だけお貸しします。</p>
+    <p class="en">Keep your home. Borrow an address — and a garden for your eggs.</p>
+  </section>
+
+  <h2>どんなところ？</h2>
+  <p>ブログや note、SNS など、あちこちで書いている人のための<strong>私書箱</strong>です。
+  記事を引っ越す必要はありません。私書箱に名札（札）を一枚貼ると、
+  <a href="https://ittekiou.github.io/dyxis/guide.html">DyXis</a> の地図に載り、
+  あなたの書いたものの表紙と目次を並べる<strong>集卵処</strong>（しゅうらんどころ）ができます。</p>
+  <p class="note">GitHub にさわる必要はありません。札を貼るのも、集卵処の世話も、世話役（Curator）がします。</p>
+
+  <h2>流れ</h2>
+  <div class="steps">
+    <div class="step"><div class="ico">🥚</div><h3>申し込む</h3><p>名前と一行の自己紹介、本拠地のリンクを送るだけ。</p></div>
+    <div class="step"><div class="ico">🐣</div><h3>札が貼られる</h3><p>私書箱に札が貼られ、あなたの集卵処ができます。卵は一日二回、自動で集まります。</p></div>
+    <div class="step"><div class="ico">↩️</div><h3>半年で巣立つ</h3><p>期間は6か月（一度だけ3か月延長できます）。自分の巣ができたら、いつでも巣立てます。</p></div>
+  </div>
+
+  <h2>見てみる</h2>
+  <div class="btns">
+    <a class="btn" href="rec-g/">🥚 集卵処の見本</a>
+    <a class="btn" href="box/">📮 私書箱の一覧</a>
+  </div>
+
+  <h2>申し込む</h2>
+  <div class="apply">
+    <div class="card">
+      <h3>GitHub のアカウントがある方</h3>
+      <p>Issue のフォームから。お知らせも、その Issue に届きます。</p>
+      <a class="btn main" href="https://github.com/ittekiou/CHIC-TEC/issues/new?template=rent-box.yml">GitHub で申し込む</a>
+    </div>
+    <div class="card">
+      <h3>アカウントがない方</h3>
+      <p>Google フォームから（登録は要りません）。お知らせはメールで届きます。</p>
+      <a class="btn main" href="https://docs.google.com/forms/d/e/1FAIpQLSfoP_hUXBxoMfVgzwmedjvllj08sCHSzyJ-d7VhtMTfNeJeDA/viewform">フォームで申し込む</a>
+    </div>
+  </div>
+  <p class="note">札に書く名前・自己紹介・本拠地のリンク・RSS は公開されます。メールアドレスは公開せず、巣立ちの手続きが済んだら消します。</p>
+
+  <h2>決まりごと</h2>
+  <ul class="plain">
+    <li>私書箱の数にも、期間にも限りがあります。ここは住むところではなく、巣立つところです。</li>
+    <li>私書箱に貼るのは札一枚。本文は、あなた自身の場所に。</li>
+    <li>札を外してほしいときは、いつでも申し出てください。</li>
+  </ul>
+  <p>くわしくは <a href="https://github.com/ittekiou/CHIC-TEC#readme">会則（README）</a> へ。</p>
+
+  <footer>
+    CESE PEC（排泄猛者倶楽部）の付属施設。DyXis｜built on SLL<br>
+    <a href="https://ittekiou.github.io/dyxis/">DyXis</a> ・ <a href="https://ittekiou.github.io/CESE-PEC/">CESE PEC</a> ・ <a href="https://github.com/ittekiou/CHIC-TEC">GitHub</a><br>
+    © 2026 K.E. Itekki and contributors — Texts CC BY-SA 4.0. Code MIT License.
+  </footer>
+</main>
+</body>
+</html>
