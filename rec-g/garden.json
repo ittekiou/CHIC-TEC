@@ -1,0 +1,79 @@
+{
+  "title": "わたしの集卵所",
+  "url": "",
+  "updated": "2026-11-20T09:46:49+09:00",
+  "shelves": [
+    {
+      "id": "write",
+      "name": "📝 書く",
+      "note": ""
+    },
+    {
+      "id": "talk",
+      "name": "💬 つぶやく",
+      "note": ""
+    }
+  ],
+  "eggs": [
+    {
+      "page": "https://note.com/takahashihajime",
+      "shelf": "write",
+      "order": 1,
+      "feed": "https://note.com/takahashihajime/rss",
+      "title": "一狄  啓｜📚 SCREP -処-",
+      "link": "https://note.com/takahashihajime",
+      "latest": [
+        {
+          "title": "絵本が三冊できちゃった──三冊三様、AIとつくる楽しい絵本。",
+          "url": "https://note.com/takahashihajime/n/n826ddc59d9ec",
+          "image": "https://assets.st-note.com/production/uploads/images/338102948/rectangle_large_type_2_7e990268d73b785a65e42fa1e1bd862c.png?width=800",
+          "date": "2026-11-19T21:30:00+09:00"
+        },
+        {
+          "title": "英国式庭園と縄文貝塚──手入れされた庭と、積もってしまった痕跡",
+          "url": "https://note.com/takahashihajime/n/ne06cedc8cfcf",
+          "image": "https://assets.st-note.com/production/uploads/images/337959796/rectangle_large_type_2_472db7752c078af8873432b578d164bd.png?width=800",
+          "date": "2026-11-19T21:00:00+09:00"
+        },
+        {
+          "title": "学長、いまここで呑んでます── のまど爺さんの昔話 18",
+          "url": "https://note.com/takahashihajime/n/n2199f828a778",
+          "image": "https://assets.st-note.com/production/uploads/images/304664254/rectangle_large_type_2_a96daf33be502c0a47faf51b43d61984.png?width=800",
+          "date": "2026-11-19T17:00:00+09:00"
+        }
+      ],
+      "latest_at": "2026-11-19T21:30:00+09:00",
+      "ok": true
+    },
+    {
+      "page": "https://bsky.app/profile/campus6214.substack.com",
+      "shelf": "talk",
+      "order": 1,
+      "feed": "https://bsky.app/profile/campus6214.substack.com/rss",
+      "title": "@campus6214.substack.com - 一狄 啓｜EgSS🥚半熟の哲学",
+      "link": "https://bsky.app/profile/campus6214.substack.com",
+      "latest": [
+        {
+          "title": "絵本が三冊できちゃった──三冊三様、AIとつくる楽しい絵本。 作ってから、作り…",
+          "url": "https://bsky.app/profile/campus6214.substack.com/post/3n2oc7yhwkc2q",
+          "image": "",
+          "date": "2026-11-19T23:36:00+09:00"
+        },
+        {
+          "title": "Digital Gardenは、ひとりで育てる庭。 でも、ひとりぼっちとは限ら…",
+          "url": "https://bsky.app/profile/campus6214.substack.com/post/3n2iah45k2k2b",
+          "image": "",
+          "date": "2026-11-17T13:48:00+09:00"
+        },
+        {
+          "title": "Gardens Above, Rhizomes Below — an enco…",
+          "url": "https://bsky.app/profile/campus6214.substack.com/post/3n2dxf6rr4s2p",
+          "image": "",
+          "date": "2026-11-15T20:55:00+09:00"
+        }
+      ],
+      "latest_at": "2026-11-19T23:36:00+09:00",
+      "ok": true
+    }
+  ]
+}
