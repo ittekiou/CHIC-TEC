@@ -43,7 +43,7 @@ def main(event_path):
         sys.exit(f"部屋番号が読めない：{room!r}")
     eggs_txt = os.path.join("box", room, "rec-g", "eggs.txt")
     if not os.path.exists(eggs_txt):
-        sys.exit(f"{eggs_txt} がない（その部屋の集卵所がまだない）")
+        sys.exit(f"{eggs_txt} がない（その部屋の集卵処がまだない）")
 
     lines = [clean_line(x) for x in section(body, "並べたいページ").splitlines()]
     lines = [x for x in lines if x][:MAX_LINES]

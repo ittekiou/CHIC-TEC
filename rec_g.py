@@ -302,7 +302,7 @@ def build(folder):
     have = {norm(e) for e in eggs}
     eggs = [u for u in nest_eggs if norm(u) not in have] + eggs
     if not title and nest_name:
-        title = nest_name + "の集卵所"
+        title = nest_name + "の集卵処"
     shelves, place = read_shelves(os.path.join(folder, "shelves.txt"))
     for key, (_, _, orig) in place.items():               # 棚にだけ書いた卵も、卵として扱う
         if key not in {norm(e) for e in eggs}:
