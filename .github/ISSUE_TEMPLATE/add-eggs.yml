@@ -1,0 +1,32 @@
+name: 卵を足す / Add eggs
+description: 私書箱の集卵所に、並べたいページを足します。 / Add pages to your P.O. Box egg garden.
+title: "[卵を足す] "
+labels: ["卵を足す / Eggs"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        札に書いた本拠地や RSS は、もう集卵所に並んでいます。それ以外に並べたいページがあれば書いてください。
+        Curator が確かめてから足します。書いた内容は公開されます。
+
+        Your home and RSS from your notice are already in your garden. Add other pages here. A Curator will check before adding. Everything here is public.
+  - type: dropdown
+    id: room
+    attributes:
+      label: 部屋番号 / Box
+      options:
+        - "001"
+        - "002"
+        - "003"
+    validations:
+      required: true
+  - type: textarea
+    id: pages
+    attributes:
+      label: 並べたいページ / Pages
+      description: ふだん見ているページのURLを一行に一つ。「URL ｜ 表示名」と書くと、その名前で並びます（20行まで）。 / One URL per line. "URL ｜ name" sets the shown name.
+      placeholder: |
+        https://example.hatenablog.com/
+        https://www.youtube.com/@example ｜ わたしの動画
+    validations:
+      required: true
