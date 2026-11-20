@@ -1,7 +1,7 @@
 {
   "title": "わたしの集卵処",
   "url": "",
-  "updated": "2026-11-20T18:00:51+09:00",
+  "updated": "2026-11-21T02:50:18+09:00",
   "shelves": [
     {
       "id": "write",
@@ -29,25 +29,25 @@
       "link": "https://note.com/takahashihajime",
       "latest": [
         {
+          "title": "立札だけじゃ誰も住まん。──庭付きの巣。丸ごとコピーでき〼",
+          "url": "https://note.com/takahashihajime/n/nae09b9ae5462",
+          "image": "https://assets.st-note.com/production/uploads/images/338495495/rectangle_large_type_2_d9e00c4e32c5cf17d17f27e1a2316e7d.png?width=800",
+          "date": "2026-11-20T21:00:00+09:00"
+        },
+        {
+          "title": "庭付きの巣🪺お貸しします。──半年間の繭topia暮らし",
+          "url": "https://note.com/takahashihajime/n/n709ffb55dfd7",
+          "image": "https://assets.st-note.com/production/uploads/images/338473078/rectangle_large_type_2_07ba593fe045863e352a44b1d1a2cd39.png?width=800",
+          "date": "2026-11-20T19:30:00+09:00"
+        },
+        {
           "title": "絵本が三冊できちゃった──三冊三様、AIとつくる楽しい絵本。",
           "url": "https://note.com/takahashihajime/n/n826ddc59d9ec",
           "image": "https://assets.st-note.com/production/uploads/images/338102948/rectangle_large_type_2_7e990268d73b785a65e42fa1e1bd862c.png?width=800",
           "date": "2026-11-19T21:30:00+09:00"
-        },
-        {
-          "title": "英国式庭園と縄文貝塚──手入れされた庭と、積もってしまった痕跡",
-          "url": "https://note.com/takahashihajime/n/ne06cedc8cfcf",
-          "image": "https://assets.st-note.com/production/uploads/images/337959796/rectangle_large_type_2_472db7752c078af8873432b578d164bd.png?width=800",
-          "date": "2026-11-19T21:00:00+09:00"
-        },
-        {
-          "title": "学長、いまここで呑んでます── のまど爺さんの昔話 18",
-          "url": "https://note.com/takahashihajime/n/n2199f828a778",
-          "image": "https://assets.st-note.com/production/uploads/images/304664254/rectangle_large_type_2_a96daf33be502c0a47faf51b43d61984.png?width=800",
-          "date": "2026-11-19T17:00:00+09:00"
         }
       ],
-      "latest_at": "2026-11-19T21:30:00+09:00",
+      "latest_at": "2026-11-20T21:00:00+09:00",
       "ok": true
     },
     {
