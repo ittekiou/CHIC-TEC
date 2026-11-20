@@ -1,7 +1,7 @@
 {
   "title": "わたしの集卵所",
   "url": "",
-  "updated": "2026-11-20T11:58:38+09:00",
+  "updated": "2026-11-20T11:59:02+09:00",
   "shelves": [
     {
       "id": "write",
@@ -25,24 +25,24 @@
       "latest": [
         {
           "title": "Add files via upload",
-          "url": "https://github.com/ittekiou/CHIC-TEC/commit/488c0febcc2280bb8fe57948f9366e0bf7f7eae6",
+          "url": "https://github.com/ittekiou/CHIC-TEC/commit/5f5e1daf167780b38bbc3ec27183a25fa7b557bf",
           "image": "https://avatars.githubusercontent.com/u/213987186?s=30&v=4",
-          "date": "2026-11-20T11:58:22+09:00"
+          "date": "2026-11-20T11:58:43+09:00"
         },
         {
           "title": "Collect eggs",
-          "url": "https://github.com/ittekiou/CHIC-TEC/commit/af22be15e8e2b26a938a8cbe92731c49d1b864b5",
+          "url": "https://github.com/ittekiou/CHIC-TEC/commit/d815e5fda3384b0eef5ec79e21381c8a41a162f0",
           "image": "https://avatars.githubusercontent.com/u/50020380?s=30&v=4",
-          "date": "2026-11-20T11:57:59+09:00"
+          "date": "2026-11-20T11:58:38+09:00"
         },
         {
           "title": "Add files via upload",
-          "url": "https://github.com/ittekiou/CHIC-TEC/commit/a3196ee8043ee8dbe6be3b670ffc169984c7519c",
+          "url": "https://github.com/ittekiou/CHIC-TEC/commit/488c0febcc2280bb8fe57948f9366e0bf7f7eae6",
           "image": "https://avatars.githubusercontent.com/u/213987186?s=30&v=4",
-          "date": "2026-11-20T11:57:41+09:00"
+          "date": "2026-11-20T11:58:22+09:00"
         }
       ],
-      "latest_at": "2026-11-20T11:58:22+09:00",
+      "latest_at": "2026-11-20T11:58:43+09:00",
       "ok": true
     },
     {
