@@ -8,6 +8,7 @@ on:
     paths:
       - "**/eggs.txt"
       - "**/shelves.txt"
+      - "rec-g/index.html"      # 見本のページを直したら、各庭に配り直す
   workflow_dispatch:            # 「Run workflow」ボタンでいつでも動かせる
 
 permissions:
@@ -26,12 +27,12 @@ jobs:
         with:
           python-version: "3.12"
       - name: Collect
-        run: python3 rec_g.py
+        run: python3 rec_g.py --page rec-g/index.html   # 見本の index.html を各庭に配ってから集める
       - name: Save
         run: |
           git config user.name "rec-g"
           git config user.email "rec-g@users.noreply.github.com"
-          git add -A -- '*garden.json' '*feed.xml'
+          git add -A -- '*garden.json' '*feed.xml' '*index.html'
           if git diff --cached --quiet; then
             echo "変わりなし"
           else
