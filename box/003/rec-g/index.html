@@ -45,6 +45,8 @@
   details .note { color:var(--sub); margin:4px 0 12px; font-size:.9rem; }
   details .grid { margin-top: 12px; }
   .more { margin:20px auto 0; display:block; }
+  .notice { margin-top:36px; padding-top:18px; border-top:1px solid var(--line); }
+  .notice h2 { font-size:1rem; color:var(--sub); margin:0 0 12px; font-weight:600; }
   footer { margin-top:48px; color:var(--sub); font-size:.8rem; text-align:center; }
   footer a { color:var(--sub); }
 </style>
@@ -89,19 +91,29 @@
   }
   const grid = list => `<div class="grid">${list.map(card).join('')}</div>`;
 
+  // 棚id が info の卵（管理人からの便りなど）は、どの見せ方でも罫線の下に分けて置く
+  const NOTICE = 'info';
+  function noticeBlock(list) {
+    if (!list.length) return '';
+    const sh = data.shelves.find(s => s.id === NOTICE) || { name: '📮 便り' };
+    return `<section class="notice"><h2>${esc(sh.name)}</h2>${grid(list)}</section>`;
+  }
+
   function render() {
     document.querySelectorAll('nav button').forEach(b => b.setAttribute('aria-pressed', b.dataset.view === view));
-    const eggs = data.eggs.slice();
+    const notices = data.eggs.filter(e => e.shelf === NOTICE).sort((a, b) => a.order - b.order);
+    const eggs = data.eggs.filter(e => e.shelf !== NOTICE);
     if (view === 'recent') {
       eggs.sort((a, b) => (b.latest_at || '').localeCompare(a.latest_at || ''));
       const list = showAll ? eggs : eggs.slice(0, FIRST);
-      $g.innerHTML = grid(list) + (eggs.length > FIRST && !showAll ? '<button class="more" id="more">もっと見る</button>' : '');
+      $g.innerHTML = grid(list) + (eggs.length > FIRST && !showAll ? '<button class="more" id="more">もっと見る</button>' : '') + noticeBlock(notices);
       const m = document.getElementById('more'); if (m) m.onclick = () => { showAll = true; render(); };
     } else if (view === 'shelf') {
       // 「## * 名前」の棚があれば、そこが棚に入れていない卵の置き場。なければ一番下に「まだ棚のないもの」
       const known = new Set(data.shelves.filter(s => s.id !== '*').map(s => s.id));
-      const rows = data.shelves.some(s => s.id === '*') ? data.shelves
-        : data.shelves.concat([{ id: '*', name: '🌱 まだ棚のないもの', note: '' }]);
+      const base = data.shelves.filter(s => s.id !== NOTICE);
+      const rows = base.some(s => s.id === '*') ? base
+        : base.concat([{ id: '*', name: '🌱 まだ棚のないもの', note: '' }]);
       const parts = rows.map(s => {
         const list = eggs.filter(e => s.id === '*' ? !known.has(e.shelf) : e.shelf === s.id).sort((a, b) => a.order - b.order);
         if (!list.length) return '';
@@ -109,11 +121,11 @@
         return `<details><summary>${esc(s.name)}<small>${list.length}件${fresh ? '・入荷' + fresh : ''}</small></summary>
           ${s.note ? `<p class="note">${esc(s.note)}</p>` : ''}${grid(list)}</details>`;
       });
-      $g.innerHTML = parts.join('');
+      $g.innerHTML = parts.join('') + noticeBlock(notices);
     } else {
       const col = new Intl.Collator('ja');
       eggs.sort((a, b) => col.compare(a.title || '', b.title || ''));
-      $g.innerHTML = grid(eggs);
+      $g.innerHTML = grid(eggs) + noticeBlock(notices);
     }
   }
 
