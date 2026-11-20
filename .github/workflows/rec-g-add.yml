@@ -45,7 +45,7 @@ jobs:
           ISSUE: ${{ github.event.issue.number }}
         run: |
           if [ "$ADDED" != "0" ]; then
-            gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "🥚 ${ADDED} 個の卵を ${ROOM} 号室の集卵所に足しました。 https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/box/${ROOM}/rec-g/"
+            gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "🥚 ${ADDED} 個の卵を ${ROOM} 号室の集卵処に足しました。 https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/box/${ROOM}/rec-g/"
           else
             gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "足す卵はありませんでした（もう並んでいるか、URL が読めませんでした）。"
           fi
