@@ -9,7 +9,10 @@ eggs.txt があるフォルダを一つの庭とみなし、
   feed.xml     … 庭ぜんぶの新着RSS
 を書き出す。人が書くのはテキスト二枚だけ。
 
-使い方:  python3 rec_g.py [フォルダ ...]   （省略すると、下にある eggs.txt を全部さがす）
+使い方:  python3 rec_g.py [--page 見本のindex.html] [フォルダ ...]
+         フォルダを省略すると、下にある eggs.txt を全部さがす。
+         --page を付けると、その index.html を各庭に配る（見本を直せば、全部の庭が揃う）。
+         <!-- rec-g: keep --> と書いた index.html は配らずに残す（自分で作り変えた庭のため）。
 Pythonの標準ライブラリだけで動く。
 """
 import html
@@ -301,6 +304,35 @@ def find_gardens(top="."):
             yield d
 
 
+def deliver_page(page, folders):
+    """見本の index.html を、各庭に配る。中身が同じなら何もしない。"""
+    with open(page, encoding="utf-8") as f:
+        master = f.read()
+    for d in folders:
+        dst = os.path.join(d, "index.html")
+        if os.path.abspath(dst) == os.path.abspath(page):
+            continue
+        cur = ""
+        if os.path.exists(dst):
+            with open(dst, encoding="utf-8") as f:
+                cur = f.read()
+            if "<!-- rec-g: keep -->" in cur:
+                print(f"keep {dst}")
+                continue
+        if cur != master:
+            with open(dst, "w", encoding="utf-8") as f:
+                f.write(master)
+            print(f"page {dst}")
+
+
 if __name__ == "__main__":
-    for folder in (sys.argv[1:] or list(find_gardens())):
+    args, page = sys.argv[1:], None
+    if "--page" in args:
+        i = args.index("--page")
+        page = args[i + 1]
+        del args[i:i + 2]
+    folders = args or list(find_gardens())
+    if page and os.path.exists(page):
+        deliver_page(page, folders)
+    for folder in folders:
         build(folder)
