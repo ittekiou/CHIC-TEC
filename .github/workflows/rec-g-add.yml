@@ -1,0 +1,52 @@
+# REC-G：Issue「卵を足す」に Curator がラベル「足す / Add」を貼ったら、その部屋の eggs.txt に書き足して集め直す
+name: Add eggs
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: rec-g
+  cancel-in-progress: false
+
+jobs:
+  add:
+    if: github.event.label.name == '足す / Add'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Add
+        id: add
+        run: python3 rec_g_add.py "$GITHUB_EVENT_PATH"
+      - name: Collect
+        if: steps.add.outputs.added != '0'
+        run: python3 rec_g.py --page rec-g/index.html
+      - name: Save
+        if: steps.add.outputs.added != '0'
+        run: |
+          git config user.name "rec-g"
+          git config user.email "rec-g@users.noreply.github.com"
+          git add -A -- 'box/*/rec-g/*'
+          git commit -m "Add eggs (#${{ github.event.issue.number }})"
+          git pull --rebase
+          git push
+      - name: Reply
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ADDED: ${{ steps.add.outputs.added }}
+          ROOM: ${{ steps.add.outputs.room }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          if [ "$ADDED" != "0" ]; then
+            gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "🥚 ${ADDED} 個の卵を ${ROOM} 号室の集卵所に足しました。 https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/box/${ROOM}/rec-g/"
+          else
+            gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "足す卵はありませんでした（もう並んでいるか、URL が読めませんでした）。"
+          fi
+          gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY"
