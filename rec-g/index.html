@@ -98,9 +98,12 @@
       $g.innerHTML = grid(list) + (eggs.length > FIRST && !showAll ? '<button class="more" id="more">もっと見る</button>' : '');
       const m = document.getElementById('more'); if (m) m.onclick = () => { showAll = true; render(); };
     } else if (view === 'shelf') {
-      const known = new Set(data.shelves.map(s => s.id));
-      const parts = data.shelves.concat([{ id: '', name: '🌱 まだ棚のないもの', note: '' }]).map(s => {
-        const list = eggs.filter(e => s.id ? e.shelf === s.id : !known.has(e.shelf)).sort((a, b) => a.order - b.order);
+      // 「## * 名前」の棚があれば、そこが棚に入れていない卵の置き場。なければ一番下に「まだ棚のないもの」
+      const known = new Set(data.shelves.filter(s => s.id !== '*').map(s => s.id));
+      const rows = data.shelves.some(s => s.id === '*') ? data.shelves
+        : data.shelves.concat([{ id: '*', name: '🌱 まだ棚のないもの', note: '' }]);
+      const parts = rows.map(s => {
+        const list = eggs.filter(e => s.id === '*' ? !known.has(e.shelf) : e.shelf === s.id).sort((a, b) => a.order - b.order);
         if (!list.length) return '';
         const fresh = list.filter(e => isNew(e.latest_at)).length;
         return `<details><summary>${esc(s.name)}<small>${list.length}件${fresh ? '・入荷' + fresh : ''}</small></summary>
