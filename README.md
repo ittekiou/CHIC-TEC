@@ -32,7 +32,7 @@ DyXis の[私書箱](https://ittekiou.github.io/CHIC-TEC/box/)（P.O. Box）。
 ### 附則
 
 1. 私書箱に貼るのは札一枚。名前・自己紹介・本拠地のリンク・RSS のほかは置かない。  
-1-2. どの私書箱にも、集卵処（REC-G）がつく。札に書いた本拠地と RSS から卵が並ぶ。ほかに並べたいページは、Issue「卵を足す」で申し出る。
+1-2. どの私書箱にも、集卵処（REC-G）がつく。札に書いた本拠地と RSS から卵が並ぶ。ほかに並べたいページは、Issue「卵を足す」で申し出る。フォームから申し込んだ人は、届いたメールに返信して申し出てもよい。
 2. 巣立つときは、旧い私書箱に転送札（↩️）を残す。転送先を書くかどうかは、本人が決める。
 3. 札を外してほしいときは、いつでも申し出てよい。ただし GitHub はこれまでの書き込みを履歴に残すため、過去の記録からまで消すことはできない。
 4. この施設は写してよい。写した施設も、どっかでつながっとく。
@@ -43,7 +43,7 @@ DyXis の[私書箱](https://ittekiou.github.io/CHIC-TEC/box/)（P.O. Box）。
 ## 申し込み
 
 - 私書箱を借りる：[Issues で申し込む](https://github.com/ittekiou/CHIC-TEC/issues/new?template=rent-box.yml)
-- 巣立つ・外す：[Issues で知らせる](https://github.com/ittekiou/CHIC-TEC/issues/new?template=return-box.yml)
+- 巣立つ・外す：[Issues で知らせる](https://github.com/ittekiou/CHIC-TEC/issues/new?template=return-box.yml)（Google フォームから申し込んだ人は、届いたメールに返信）
 
 - GitHub のアカウントがない方：[Google フォームで申し込む](https://docs.google.com/forms/d/e/1FAIpQLSfoP_hUXBxoMfVgzwmedjvllj08sCHSzyJ-d7VhtMTfNeJeDA/viewform)
 
