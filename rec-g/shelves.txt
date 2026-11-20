@@ -1,7 +1,7 @@
 # REC-G の棚割り
 # ・「## 棚id 名前 ｜ 添え書き」が棚。見出しの順が、棚の順
 # ・見出しの下に eggs.txt と同じURLを書く。並んだ順が、棚の中の順
-# ・どの棚にも書いていない卵は「まだ棚のないもの」に入る
+# ・どの棚にも書いていない卵は「## * 名前」の棚に入る（その見出しがなければ、一番下の「まだ棚のないもの」に）
 # ・棚id は英字で。一度決めたら変えない（名前はいつでも変えてよい）
 
 ## write 📝 書く
@@ -9,3 +9,6 @@ https://note.com/takahashihajime
 
 ## talk 💬 つぶやく
 https://bsky.app/profile/campus6214.substack.com
+
+## info 📮 管理人からの便り
+https://bsky.app/profile/dyxis.substack.com
