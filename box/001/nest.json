@@ -7,7 +7,7 @@
   "updated": "2026-11-10",
   "feeds": [],
   "links": [
-    { "title": "借りる", "url": "https://github.com/ittekiou/CHIC-TEC/issues/new?template=rent-box.yml" }
+    { "title": "借りる", "url": "https://ittekiou.github.io/CHIC-TEC/#apply" }
   ],
   "nests": [
     { "name": "CHIC TEC｜繭topia", "url": "https://ittekiou.github.io/CHIC-TEC/" }
