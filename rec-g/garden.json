@@ -1,7 +1,7 @@
 {
   "title": "わたしの集卵所",
   "url": "",
-  "updated": "2026-11-20T10:33:07+09:00",
+  "updated": "2026-11-20T11:57:59+09:00",
   "shelves": [
     {
       "id": "write",
@@ -15,6 +15,36 @@
     }
   ],
   "eggs": [
+    {
+      "page": "https://github.com/ittekiou/CHIC-TEC/commits/main.atom",
+      "shelf": "",
+      "order": 900,
+      "feed": "https://github.com/ittekiou/CHIC-TEC/commits/main.atom",
+      "title": "Recent Commits to CHIC-TEC:main",
+      "link": "https://github.com/ittekiou/CHIC-TEC/commits/main",
+      "latest": [
+        {
+          "title": "Add files via upload",
+          "url": "https://github.com/ittekiou/CHIC-TEC/commit/a3196ee8043ee8dbe6be3b670ffc169984c7519c",
+          "image": "https://avatars.githubusercontent.com/u/213987186?s=30&v=4",
+          "date": "2026-11-20T11:57:41+09:00"
+        },
+        {
+          "title": "Add files via upload",
+          "url": "https://github.com/ittekiou/CHIC-TEC/commit/72be62a5d825829767167c7373686e59f8a44e5a",
+          "image": "https://avatars.githubusercontent.com/u/213987186?s=30&v=4",
+          "date": "2026-11-20T11:56:57+09:00"
+        },
+        {
+          "title": "Add files via upload",
+          "url": "https://github.com/ittekiou/CHIC-TEC/commit/bb44e8cc742832191942b0b15bca60955e445e0d",
+          "image": "https://avatars.githubusercontent.com/u/213987186?s=30&v=4",
+          "date": "2026-11-20T11:56:36+09:00"
+        }
+      ],
+      "latest_at": "2026-11-20T11:57:41+09:00",
+      "ok": true
+    },
     {
       "page": "https://note.com/takahashihajime",
       "shelf": "write",
