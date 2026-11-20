@@ -4,7 +4,7 @@
 # ・｜のないURLのあとの文字は覚え書き（読まない）
 # ・「title:」の行は庭の名前。「url:」の行は公開されるページの住所（なくてもよい。先頭の # を外して使う）
 
-title: わたしの集卵所
+title: わたしの集卵処
 # url: https://あなたの名前.github.io/リポジトリ名/
 
 https://note.com/takahashihajime  note（表示名なし）
