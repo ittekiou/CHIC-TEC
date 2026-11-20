@@ -46,7 +46,7 @@ def norm(u):
 
 
 def read_eggs(path):
-    title, site, eggs = "", "", []
+    title, site, eggs, names = "", "", [], {}
     with open(path, encoding="utf-8") as f:
         for line in f:
             s = line.strip()
@@ -62,7 +62,12 @@ def read_eggs(path):
             u = URL_RE.match(s)
             if u and norm(u.group(0)) not in {norm(e) for e in eggs}:
                 eggs.append(u.group(0))
-    return title, site, eggs
+                rest = s[u.end():]
+                if "｜" in rest or "|" in rest:          # 「URL ｜ 表示名」なら、その名前で並べる
+                    name = re.split(r"[｜|]", rest, maxsplit=1)[1].strip()
+                    if name:
+                        names[norm(u.group(0))] = name
+    return title, site, eggs, names
 
 
 def read_shelves(path):
@@ -247,7 +252,7 @@ def write_feed(garden, out, page):
 
 def build(folder):
     eggs_txt = os.path.join(folder, "eggs.txt")
-    title, site, eggs = read_eggs(eggs_txt)
+    title, site, eggs, names = read_eggs(eggs_txt)
     shelves, place = read_shelves(os.path.join(folder, "shelves.txt"))
     for key, (_, _, orig) in place.items():               # 棚にだけ書いた卵も、卵として扱う
         if key not in {norm(e) for e in eggs}:
@@ -268,12 +273,12 @@ def build(folder):
         try:
             feed, data = find_feed(page)
             t, link, items = read_feed(data)
-            egg.update({"feed": feed, "title": t or page, "link": link or page,
+            egg.update({"feed": feed, "title": names.get(norm(page)) or t or page, "link": link or page,
                         "latest": items[:KEEP], "latest_at": items[0]["date"] if items else "", "ok": True})
             print(f"ok   {page} -> {feed} ({len(items)})")
         except Exception as e:
             prev = old.get(norm(page), {})
-            egg.update({"feed": prev.get("feed", ""), "title": prev.get("title", page),
+            egg.update({"feed": prev.get("feed", ""), "title": names.get(norm(page)) or prev.get("title", page),
                         "link": prev.get("link", page), "latest": prev.get("latest", []),
                         "latest_at": prev.get("latest_at", ""), "ok": False})
             print(f"skip {page}: {type(e).__name__}: {e}", file=sys.stderr)
