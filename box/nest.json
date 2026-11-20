@@ -2,7 +2,7 @@
   "sll": "0.1",
   "name": "📮 私書箱",
   "url": "https://ittekiou.github.io/CHIC-TEC/box/",
-  "about": "本拠地はそのまま、仮の住所を期間限定で。どの部屋にも集卵所（REC-G）がつきます。",
+  "about": "本拠地はそのまま、仮の住所を期間限定で。どの部屋にも集卵処（REC-G）がつきます。",
   "lang": "ja",
   "updated": "2026-11-20",
   "feeds": [],
@@ -10,7 +10,7 @@
     { "title": "私書箱 001", "url": "https://ittekiou.github.io/CHIC-TEC/box/001/" },
     { "title": "私書箱 002", "url": "https://ittekiou.github.io/CHIC-TEC/box/002/" },
     { "title": "私書箱 003", "url": "https://ittekiou.github.io/CHIC-TEC/box/003/" },
-    { "title": "🥚 集卵所の見本", "url": "https://ittekiou.github.io/CHIC-TEC/rec-g/" },
+    { "title": "🥚 集卵処の見本", "url": "https://ittekiou.github.io/CHIC-TEC/rec-g/" },
     { "title": "借りる", "url": "https://github.com/ittekiou/CHIC-TEC/issues/new?template=rent-box.yml" }
   ],
   "nests": [
