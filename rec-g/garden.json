@@ -1,7 +1,7 @@
 {
   "title": "わたしの集卵所",
   "url": "",
-  "updated": "2026-11-20T09:46:49+09:00",
+  "updated": "2026-11-20T09:53:53+09:00",
   "shelves": [
     {
       "id": "write",
@@ -50,7 +50,7 @@
       "shelf": "talk",
       "order": 1,
       "feed": "https://bsky.app/profile/campus6214.substack.com/rss",
-      "title": "@campus6214.substack.com - 一狄 啓｜EgSS🥚半熟の哲学",
+      "title": "一狄 啓｜Bluesky",
       "link": "https://bsky.app/profile/campus6214.substack.com",
       "latest": [
         {
