@@ -96,6 +96,34 @@ def read_shelves(path):
     return shelves, place
 
 
+# ---------- 札（nest.json）から卵を拾う ----------
+
+def eggs_from_nest(folder):
+    """庭のひとつ上に札（nest.json）があれば、そこから卵を拾う（CHIC TEC の私書箱など）。
+    RSS（feeds）があればそれを、なければ本拠地のリンク（links）を卵にする。
+    GitHub の申し込みページなど、卵にならないリンクは飛ばす。"""
+    path = os.path.join(os.path.dirname(os.path.abspath(folder)), "nest.json")
+    if not os.path.exists(path):
+        return "", []
+    try:
+        with open(path, encoding="utf-8") as f:
+            nest = json.load(f)
+    except Exception:
+        return "", []
+    name = (nest.get("name") or "").strip()
+    if name.startswith("🈳"):                             # 空き部屋の札からは卵を拾わない（名前だけ）
+        return name, []
+    feeds = [x if isinstance(x, str) else (x or {}).get("url", "") for x in nest.get("feeds", [])]
+    eggs = [u for u in feeds if URL_RE.match(u or "")]
+    if not eggs:
+        for l in nest.get("links", []):
+            u = (l or {}).get("url", "")
+            host = (urlsplit(u).hostname or "").lower()
+            if URL_RE.match(u) and host not in ("github.com", "www.github.com") and "/rec-g" not in u:
+                eggs.append(u)
+    return name, eggs
+
+
 # ---------- ページのURLから RSS を見つける ----------
 
 def fetch(url):
@@ -256,6 +284,11 @@ def write_feed(garden, out, page):
 def build(folder):
     eggs_txt = os.path.join(folder, "eggs.txt")
     title, site, eggs, names = read_eggs(eggs_txt)
+    nest_name, nest_eggs = eggs_from_nest(folder)         # 札にある卵を先頭に
+    have = {norm(e) for e in eggs}
+    eggs = [u for u in nest_eggs if norm(u) not in have] + eggs
+    if not title and nest_name:
+        title = nest_name + "の集卵所"
     shelves, place = read_shelves(os.path.join(folder, "shelves.txt"))
     for key, (_, _, orig) in place.items():               # 棚にだけ書いた卵も、卵として扱う
         if key not in {norm(e) for e in eggs}:
