@@ -1,0 +1,10 @@
+# REC-G の卵の一覧。ふだん見ているページのURLを、一行に一つ書く
+# ・RSSのURLを知らなくてよい（note・Substack・Bluesky・Medium・はてな・YouTube などは自動で探す）
+# ・URLのあとの文字は覚え書き（読まない）
+# ・「title:」の行は庭の名前。「url:」の行は公開されるページの住所（なくてもよい。先頭の # を外して使う）
+
+title: わたしの集卵所
+# url: https://あなたの名前.github.io/リポジトリ名/
+
+https://note.com/takahashihajime  note
+https://bsky.app/profile/campus6214.substack.com  Bluesky
