@@ -45,6 +45,8 @@ DyXis の[私書箱](https://ittekiou.github.io/CHIC-TEC/box/)（P.O. Box）。
 - 私書箱を借りる：[Issues で申し込む](https://github.com/ittekiou/CHIC-TEC/issues/new?template=rent-box.yml)
 - 巣立つ・外す：[Issues で知らせる](https://github.com/ittekiou/CHIC-TEC/issues/new?template=return-box.yml)
 
+- GitHub のアカウントがない方：[Google フォームで申し込む](https://docs.google.com/forms/d/e/1FAIpQLSfoP_hUXBxoMfVgzwmedjvllj08sCHSzyJ-d7VhtMTfNeJeDA/viewform)
+
 ---
 
 CESE PEC（排泄猛者倶楽部）の付属施設。DyXis｜built on SLL ・ Synchro-Lag LOCUS｜SLL
