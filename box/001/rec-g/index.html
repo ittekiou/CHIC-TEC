@@ -49,6 +49,7 @@
   .notice h2 { font-size:1rem; color:var(--sub); margin:0 0 12px; font-weight:600; }
   footer { margin-top:48px; color:var(--sub); font-size:.8rem; text-align:center; }
   footer a { color:var(--sub); }
+  .empty { text-align:center; color:var(--sub); padding:36px 12px; border:1px dashed var(--line); border-radius:10px; }
   .foot { margin-top:8px; color:var(--sub); font-size:.75rem; text-align:center; line-height:1.7; }
   .foot a { color:var(--sub); }
 </style>
@@ -107,6 +108,11 @@
     document.querySelectorAll('nav button').forEach(b => b.setAttribute('aria-pressed', b.dataset.view === view));
     const notices = data.eggs.filter(e => e.shelf === NOTICE).sort((a, b) => a.order - b.order);
     const eggs = data.eggs.filter(e => e.shelf !== NOTICE);
+    // まだ卵がないとき（空き部屋など）は、一行だけ案内を出す
+    if (!eggs.length) {
+      $g.innerHTML = '<p class="empty">🥚 まだ卵はありません。入居すると、ここに並びます。</p>' + noticeBlock(notices);
+      return;
+    }
     if (view === 'recent') {
       eggs.sort((a, b) => (b.latest_at || '').localeCompare(a.latest_at || ''));
       const list = showAll ? eggs : eggs.slice(0, FIRST);
