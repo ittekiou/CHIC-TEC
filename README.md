@@ -25,7 +25,7 @@ DyXis の[私書箱](https://ittekiou.github.io/CHIC-TEC/box/)（P.O. Box）。
 | 🈳 | 空き |
 | ↩️ | 転送済み（巣立ち） |
 
-## 会則
+## 所作心得
 
 **第一条**　[私書箱](https://ittekiou.github.io/CHIC-TEC/box/)の数には限りがある。期間にも限りがある。ここは住むところではなく、巣立つところである。
 
