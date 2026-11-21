@@ -5,11 +5,11 @@
 # ・「title:」の行は庭の名前。「url:」の行は公開されるページの住所（なくてもよい。先頭の # を外して使う）
 
 title: わたしの集卵処（見本）
-url: https://camp-us.net/rack/
 # url: https://あなたの名前.github.io/リポジトリ名/
 
 https://note.com/takahashihajime  note（表示名なし）
 https://bsky.app/profile/campus6214.substack.com ｜ 一狄 啓｜Bluesky
+https://camp-us.net/rack/
 
 # ── 管理人からの便り（いらなければ消してよい）
 https://bsky.app/profile/dyxis.substack.com ｜ 🐜 DyXis の便り
