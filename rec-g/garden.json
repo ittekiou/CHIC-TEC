@@ -1,7 +1,7 @@
 {
-  "title": "わたしの集卵処",
-  "url": "",
-  "updated": "2026-11-21T13:59:00+09:00",
+  "title": "わたしの集卵処（見本）",
+  "url": "https://camp-us.net/rack/",
+  "updated": "2026-11-21T20:13:34+09:00",
   "shelves": [
     {
       "id": "write",
@@ -29,6 +29,12 @@
       "link": "https://note.com/takahashihajime",
       "latest": [
         {
+          "title": "スマホやめますか、学生やめますか── のまど爺さんの昔話 19",
+          "url": "https://note.com/takahashihajime/n/n02cfca9b0a22",
+          "image": "https://assets.st-note.com/production/uploads/images/304665956/rectangle_large_type_2_cc2a61cfda3bdcfdf86bad5510684ca0.png?width=800",
+          "date": "2026-11-21T17:00:00+09:00"
+        },
+        {
           "title": "立札だけじゃ誰も住まん。──庭付きの巣。丸ごとコピーでき〼",
           "url": "https://note.com/takahashihajime/n/nae09b9ae5462",
           "image": "https://assets.st-note.com/production/uploads/images/338495495/rectangle_large_type_2_d9e00c4e32c5cf17d17f27e1a2316e7d.png?width=800",
@@ -39,15 +45,9 @@
           "url": "https://note.com/takahashihajime/n/n709ffb55dfd7",
           "image": "https://assets.st-note.com/production/uploads/images/338473078/rectangle_large_type_2_07ba593fe045863e352a44b1d1a2cd39.png?width=800",
           "date": "2026-11-20T19:30:00+09:00"
-        },
-        {
-          "title": "絵本が三冊できちゃった──三冊三様、AIとつくる楽しい絵本。",
-          "url": "https://note.com/takahashihajime/n/n826ddc59d9ec",
-          "image": "https://assets.st-note.com/production/uploads/images/338102948/rectangle_large_type_2_7e990268d73b785a65e42fa1e1bd862c.png?width=800",
-          "date": "2026-11-19T21:30:00+09:00"
         }
       ],
-      "latest_at": "2026-11-20T21:00:00+09:00",
+      "latest_at": "2026-11-21T17:00:00+09:00",
       "ok": true
     },
     {
